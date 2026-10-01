@@ -1,6 +1,6 @@
-# classisland-dev
+# classisland-dev-skill
 
-ZCode skill：ClassIsland 本体/插件开发知识库。完整镜像官方开发文档（docs.classisland.tech/dev，32 页），供 AI 编码助手在开发 ClassIsland 插件/扩展时按需查阅。
+通用 Agent Skills 标准知识库：ClassIsland 本体/插件开发。完整镜像官方开发文档（docs.classisland.tech/dev，32 页），供 AI 编码代理（ZCode、Claude Code、OpenCode、Codex CLI 等任何支持 Agent Skills / SKILL.md 约定的工具）在开发 ClassIsland 插件/扩展时按需查阅。
 
 - 文档站：https://docs.classisland.tech/dev/
 - 上游源文件：https://github.com/ClassIsland/classisland-docs-next （main 分支，`src/dev/**`）
@@ -21,14 +21,14 @@ classisland-dev/
 └── LICENSE           # CC BY-NC-SA 4.0（整仓，随上游内容）
 ```
 
-## 安装
+## 安装（通用 Agent Skills 标准）
 
-把 `classisland-dev/` 整个目录放入：
+本 skill 遵循 [Agent Skills](https://agentskills.io) 约定：一个目录 + 带 `name`/`description` frontmatter 的 `SKILL.md`，任何支持该标准的 agent 工具都能直接使用。
 
-- 个人级：`~/.agents/skills/`
-- 项目级：`<项目>/.agents/skills/`
-
-重启 ZCode 会话即被发现；也可用 `/skill classisland-dev` 强制加载。
+- 个人级：把 `classisland-dev-skill/` 整个目录放入 `~/.agents/skills/`
+- 项目级：放入 `<项目>/.agents/skills/`
+- 只认自家目录的工具（如 Claude Code 的 `~/.claude/skills/`）：复制或软链一份过去即可，格式兼容
+- 触发：agent 根据 description 自动加载；支持斜杠命令的工具（如 ZCode `/skill classisland-dev-skill`）可强制加载
 
 ## 刷新文档
 

@@ -1,6 +1,7 @@
 ---
-name: classisland-dev
+name: classisland-dev-skill
 description: ClassIsland 本体/插件开发知识库，完整镜像官方开发文档（docs.classisland.tech/dev，来自 GitHub classisland-docs-next 源文件）。凡涉及 ClassIsland 插件开发、组件（Component）、提醒（Notification）、课表/课程服务（LessonsService）、Uri 导航（classisland://）、IPC 跨进程通信、规则集、依赖注入、日志、设置页面、图标表达式、插件打包上架（cipx/PluginIndex），或用户提出要给 ClassIsland 写插件/扩展功能时，先读本 skill 再动手。
+license: CC-BY-NC-SA-4.0
 ---
 
 # ClassIsland 开发
